@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		/*margin: 0;*/
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background: url(https://www.grupapunts.es/wp-content/uploads/oferta_empleo_programador_informatico_01-1200x750.jpg);
+		background-size: 110vh 100vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	a{
+		text-align: center;
+		color:white;
+	}
+	h2{
+		font-size: 32px;
+		font-weight: 700;
+		color: white;
+		text-align: center;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Foto Perfil y Text*/
+	.imgRedonda {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align: right;
+	}
+	.menu{
+	text-align: center;
+
+	}
+	h4 {
+		font-size: 26px;
+		font-weight: 700;
+		color: #fff;
+		letter-spacing: 0.25px;
+		text-align: center;
+	  }
+	  p {
+		font-size: 16px;
+		font-weight: 400;
+		color: #fff;
+		letter-spacing: 0.55px;
+	  }
+	  .social{
+		width: 250px;
+
+		padding:inherit;
+		display: inline-block;
+		text-align: center;
+		line-height: 25px;
+
+		font-size: 10px;
+	
+	}
+	.soc{
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+	}		
+	.test{
+		display: inline-block;
+		
+		padding: 20px;
+		font-size: 14px;
+		transition: all 0.5s;
+		list-style: none;
+
+		
+
+	}
+	.cono{
+
+		width: 1000px;
+		/*height: 200px;*/
+		margin: auto;
+		margin-top: auto;
+	}
+	.sobre{
+
+		width: auto;
+		height: 200px;
+		margin: auto;
+		margin-top: 1px;
+	}
+	.proy{
+
+		width: 1000px;
+		height: 200px;
+		margin: auto;
+		margin-top: 150px;
+	}
+	/*Fin foto*/
+	
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 1;
+		visibility: visible;
+		
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 50%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height:inherit;
+		position: static;
+		transition: all 500ms ease;
+		transform: translateX(25%);
+		position: fixed;
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(15%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 15px;
+		color: #c7c7c7;
+
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+
+	/*Fin de Menù lateral*/
+
+	/*Contenido*/
+	.contenido{
+		
+    	height: 100%;
+		width: 100%;
+		max-width: 500px;
+		height: 600;
+		position: relative;
+		opacity:initial;
+		transition: all 500ms ease;
+		transform: translateX(65%);
+	}
+
+	/*Fin del contenido*/
+
+	/*Transicion de Imagenes*/
+
+	.contain{
+		margin: auto;		
+		width: 900px;
+		padding: 30px;
+	  }
+
+	ul, li {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	
+	ul.slider{
+	  position: relative;
+	  width: 800px;
+	  height: 400px;
+	}
+	
+	ul.slider li {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		opacity: 0;
+		width: inherit;
+		height: inherit;
+		transition: opacity .5s;
+
+	}
+	
+	ul.slider li img{
+	  width: 100%;
+	  height: 400px;
+	 
+	}
+	
+	ul.slider li:first-child {
+		opacity: 1; /*Mostramos el primer <li>*/
+	}
+	
+	ul.slider li:target {
+		opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+	}
+
+	.menu{
+	  text-align: center;
+	  margin: 20px;
+	}
+	
+	.menu li{
+	  display: inline-block;
+	  text-align: center;
+	}
+	
+	.menu li a{
+	  display: inline-block;
+	  color: white;
+	  text-decoration: none;
+
+	  padding: 10px;
+	  width: 20px;
+	  height: 20px;
+	  font-size: 20px;
+	  border-radius: 100%;
+	}	
+
+
+	/*FIN de transicion*/
+
+	
